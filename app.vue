@@ -15,10 +15,10 @@ watch(route, () => {
 </script>
 
 <template>
-  <div>
-    <ClientOnly>
-      <BackgroundCanvas v-if="isCanvasShown" />
-    </ClientOnly>
+  <ClientOnly>
+    <BackgroundCanvas v-if="isCanvasShown" />
+  </ClientOnly>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>

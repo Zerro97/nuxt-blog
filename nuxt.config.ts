@@ -3,7 +3,7 @@ import transformerDirective from '@unocss/transformer-directives'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     'nuxt-icon',
     'unplugin-icons/nuxt',
     'nuxt-headlessui',
@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     componentIslands: true,
+    payloadExtraction: true,
   },
   runtimeConfig: {
     // https://github.com/harlan-zw/nuxt-seo-kit#1-define-config

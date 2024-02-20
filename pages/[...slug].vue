@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'main',
+})
+
 useServerSeoMeta({
   title: '404',
   description: 'Sorry! This page does not exist.',
@@ -12,10 +16,8 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <NuxtLayout name="main">
-    <div class="flex flex-col items-center justify-center w-full py-20">
-      <h1>404</h1>
-      <p>Page Not Found</p>
-    </div>
-  </NuxtLayout>
+  <div class="flex flex-col items-center justify-center w-full py-20">
+    <h1>404</h1>
+    <p>Page Not Found</p>
+  </div>
 </template>

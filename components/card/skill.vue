@@ -19,9 +19,7 @@ const curPercent = setTimeout(() => {
       <h4>{{ name }}</h4>
       <div class="w-full mt-1">
         <div class="relative w-full h-5 overflow-hidden rounded bg-zinc-900">
-          <Transition>
-            <div class="absolute flex items-center justify-center h-full bg-violet-500" :style="{ width: `${levelPercent}%` }" />
-          </Transition>
+          <div class="absolute flex items-center justify-center h-full bg-violet-500" :style="{ width: `${levelPercent}%` }" />
           <p class="absolute w-full text-sm font-semibold text-center text-zinc-300 whitespace-nowrap">
             {{ curLevel }} / {{ maxLevel }}
           </p>
